@@ -2,10 +2,10 @@
  * ITESS-TICS
  * SEMESTRE ENERO-JUNIO 2024
  * CALCULO INTEGRAL
- *UNIDAD 1- TEOREMA FUNDAMENTAL DE CALCULO
+ * UNIDAD 1: TEOREMA FUNDAMENTAL DE CALCULO
  * CALCULO DE APROXIMACION DE AREA
- *DIANA KAREN MANDUJANO MAGAÑA
- *09 FEBRERO 2024
+ * DIANA KAREN MANDUJANO MAGAÑA
+ * 09 / FEBRERO / 2024
  */
 package ci.u1teoremaf;
 
@@ -22,6 +22,7 @@ public class AreaAproximation {
         this.xIni = xIni;
         this.xEnd = xEnd;
         this.n = n;
+        
         x = new double[n+1];
         fx = new double[n+1];
     }
@@ -31,9 +32,16 @@ public class AreaAproximation {
         area=0;
         for(int i=0; i<=n; i++){
             x[i]=xIni+i*dx;
-            fx[i]=x[i]*x[i];
+            //fx[i]=x[i]*x[i];
+            fx[i]=Math.sqrt(9.0-x[i]*x[i]);
             area=area+fx[i]*dx;
         }
+    }
+    public void print(){
+        for(int i=0; i<=n; i++){
+            System.out.println(i+" "+x[i]+" "+fx[i]);
+        }
+        System.out.println("Area: "+area);
     }
 
     public double getArea() {

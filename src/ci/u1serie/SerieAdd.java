@@ -41,7 +41,7 @@ public class SerieAdd {
     }
     
     public void print(){
-        System.out.println("index  |   i   |   f   ");
+        System.out.println("index  |   i    |   f   ");
         for (int index = 0; index < n; index++)
             System.out.println(index + "      |    " + i[index] + "   |   " + f[index]);
         

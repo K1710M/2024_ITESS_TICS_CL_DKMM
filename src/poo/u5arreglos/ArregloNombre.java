@@ -3,7 +3,7 @@ package poo.u5arreglos;
 
 import java.util.Arrays;
 
-
+//Diana Karen Mandujano Magaña
 public class ArregloNombre {
     public static void main (String [] args){
         String nombres[] = {"Gerardo", "Paulina", "Nicólas", "Giovanni", "Alexis", "Leonardo", "Esteban", "Karen",

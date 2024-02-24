@@ -7,6 +7,8 @@ public class SumasTP03Ejercicio6 extends SumasRiemann {
         super(x, w);
     }
     
+    
+    @Override
     public double funcion(double x) {
         return 3*Math.cos(0.5*x);
     }

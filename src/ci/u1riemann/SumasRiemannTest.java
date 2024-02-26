@@ -2,8 +2,9 @@ package ci.u1riemann;
 
 public class SumasRiemannTest {
     public static void main(String ...args){
-        sumasEjemplo1Test();
+        //sumasEjemplo1Test();
         //sumasTP03Ejercicio6();
+        sumastp03parte4();
     }
     
     public static void sumasEjemplo1Test() {
@@ -25,5 +26,26 @@ public class SumasRiemannTest {
         stp.calcular();
         stp.imprimir();
         
+    }
+    
+    public static void sumastp03parte4(){
+        double a = 0;
+        double b = Math.PI;
+        int n = 1;
+        
+        double dx = (b-a)/n;
+        double x[] = new double [n+1];
+        double w [] = new double [n];
+        
+        for (int i = 0; i <x.length; i++)
+            x[i] = a + i*dx;
+            
+        for (int i = 0; i <w.length; i++){
+            w[i] = x[i];
+        }
+        
+        SumasRiemann sm = new SumasRiemann(x,w);
+        sm.calcular();
+        sm.imprimir();
     }
 }

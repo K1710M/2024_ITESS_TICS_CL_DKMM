@@ -17,6 +17,13 @@ public class SumasRiemann {
     protected double [] fw;
     protected double  suma;
 
+    public SumasRiemann (double a, double b, int n){
+        
+    }
+    public SumasRiemann(){
+        
+    }
+    
     public SumasRiemann(double[] x, double[] w) {
         this.x = x;
         this.w = w;
@@ -38,7 +45,11 @@ public class SumasRiemann {
     }
     
     public double funcion(double x) {
-        return 1.0;
+       // return x*x;
+       // return x;
+       //return Math.sin(x) ;
+        //return Math.sin(x) * Math.sin(x);
+        return Math.cos(x);
     }
     
     public void imprimir() {

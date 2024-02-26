@@ -8,8 +8,8 @@ public class TI201PracticaU5_2 {
     private Scanner leer;
     public static void main(String []args){
         TI201PracticaU5_2 ti = new TI201PracticaU5_2();
-       // ti.Promedio();
-       //ti.Aleatorio();
+        ti.Promedio();
+        ti.Aleatorio();
         ti.Invertida();
     }
     
@@ -28,6 +28,7 @@ public class TI201PracticaU5_2 {
         System.out.println(Arrays.toString(cal));
         promedio = suma/cal.length;
         System.out.print("Tu promedio es: "+ promedio);
+        System.out.println();
     }
     
     public void Aleatorio(){
@@ -36,17 +37,19 @@ public class TI201PracticaU5_2 {
         for(int i = 0; i<3; i++){
             System.out.println( nom[a]);
             a = (int)(Math.random()*nom.length);
-        }    
+        }  
+        System.out.println();
     }
     
     public void Invertida () {
         int arr[] = { 7, 9, 17, 10, 05, 99, };
         int arr2[] = new int [arr.length];
         int cont = 0;
-        for (int i =arr.length-1 ; i<=0; i--){
+        for (int i =arr.length-1 ; i>=0; i--){
+            arr2[cont] = arr[i];
             cont ++;
-            arr2[cont] = arr2[i];
         }
-        System.out.println();
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr2));
     }
 }

@@ -42,10 +42,12 @@ public class SumasRiemann {
     }
     
     public void imprimir() {
-        System.out.println("i  |  wi  |  fw  |  fwi*dxi");
+        //System.out.println("i  |  wi  |  fw  |  fwi*dxi");
         
-        for (int i  = 0; i<w.length; i++){
-            System.out.println(i + "  |  " + w[i] + "  |  " + fw[i] + "  |  " + fw[i]*dx[i]);
-        }
+//        for (int i  = 0; i<w.length; i++){
+//            System.out.println(i + "  |  " + w[i] + "  |  " + fw[i] + "  |  " + fw[i]*dx[i]);
+//        }
+
+        System.out.println("suma:" + suma);
     }
 }

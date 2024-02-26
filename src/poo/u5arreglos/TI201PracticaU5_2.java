@@ -9,8 +9,8 @@ public class TI201PracticaU5_2 {
     public static void main(String []args){
         TI201PracticaU5_2 ti = new TI201PracticaU5_2();
        // ti.Promedio();
-        ti.Aleatorio();
-        
+       //ti.Aleatorio();
+        ti.Invertida();
     }
     
     public void Promedio(){
@@ -31,10 +31,22 @@ public class TI201PracticaU5_2 {
     }
     
     public void Aleatorio(){
-        String nom[] = {"Esteban" + "Julian" + "Karen" + "Francisco" + "Manuel"};
-        int a = (int)(Math.random()*4);
-        for(int i = 0; i<nom.length; i++){
+        String nom[] = {"Esteban" , "Julian" , "Karen" , "Francisco" , "Manuel"};
+        int a = 0;
+        for(int i = 0; i<3; i++){
             System.out.println( nom[a]);
+            a = (int)(Math.random()*nom.length);
         }    
+    }
+    
+    public void Invertida () {
+        int arr[] = { 7, 9, 17, 10, 05, 99, };
+        int arr2[] = new int [arr.length];
+        int cont = 0;
+        for (int i =arr.length-1 ; i<=0; i--){
+            cont ++;
+            arr2[cont] = arr2[i];
+        }
+        System.out.println();
     }
 }

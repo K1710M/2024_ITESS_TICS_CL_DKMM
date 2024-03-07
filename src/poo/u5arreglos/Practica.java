@@ -14,10 +14,9 @@ public class Practica {
         this.leer = new Scanner (System.in);
         System.out.println("Tamaño de filas");
         int n = leer.nextInt();
-        int m = 3;
         String a;
         System.out.println("Llenado");
-        String [][] tab = new String [n+1][m];
+        String [][] tab = new String [n+1][3];
         for (int i = 1; i < tab.length; i++) { 
             tab [0][0]="Nombre";
             tab [0][1]="Edad";
@@ -26,14 +25,16 @@ public class Practica {
                 a = leer.next();
                 tab[i][j]=a;
             }
-            System.out.println("");
+            System.out.println();
         }
         System.out.println("Impresion");
         for (int i = 0; i < tab.length; i++) { 
+            System.out.println("_________________________");
             for (int j = 0; j < tab[i].length; j++) {
-                System.out.print(tab[i][j]+"\t");
+                System.out.print("|"+tab[i][j]+"\t");
             }
-            System.out.println("");
+            System.out.println("|");
         }
+        System.out.println("_________________________");
     }
 }

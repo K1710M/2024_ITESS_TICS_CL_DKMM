@@ -57,19 +57,19 @@ public class Coordinate {
         this.ymax = ymax;
     }
 
-    public double getWhidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWhidth(double whidth) {
+    public void setWidth(double whidth) {
         this.width = whidth;
     }
 
-    public double getHight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHight(double hight) {
+    public void setHeight(double hight) {
         this.height = hight;
     }
    
